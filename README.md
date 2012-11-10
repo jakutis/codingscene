@@ -9,7 +9,7 @@ Web application for coding events, problems, contacts.
 # Using and developing
 
 Open the webapp in browser, register your demo user.
-To confirm the registered user you'll have to either copy confirmation hash from sql codinscene.users.confirmation field, or have a correct smtp configuration.
+To confirm the registered user you'll have to either copy confirmation hash from sql codingscene.users.confirmation field, or have a correct smtp configuration.
 Then you login and see that there are no events.
 Not only that, but there is also no administrator's panel.
 You'll have to INSERT your events, activities, tasks, etc. by hand at this point.
