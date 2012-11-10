@@ -1,0 +1,117 @@
+<div class="row-fluid">
+    <div class="span6">
+        <h1>Come join us!</h1>
+        <form class="form-horizontal" method="POST" action="/">
+            <fieldset>
+                {{#usernameok}}
+                <div class="control-group">
+                    <label class="control-label" for="username">Username</label>
+                    <div class="controls">
+                        <input class="input-xlarge focused" value="{{username}}" name="username" id="username" type="text">
+                        <span class="help-inline"></span>
+                    </div>
+                </div>
+                {{/usernameok}}
+                {{^usernameok}}
+                <div class="control-group error">
+                    <label class="control-label" for="username">Username</label>
+                    <div class="controls">
+                        <input class="input-xlarge focused" value="{{username}}" name="username" id="username" type="text">
+                        <span class="help-inline">
+                            {{#errors.username}}
+                            <span>{{message}}. </span>
+                            {{/errors.username}}
+                        </span>
+                    </div>
+                </div>
+                {{/usernameok}}
+                {{#passwordok}}
+                <div class="control-group">
+                    <label class="control-label" for="password">Password</label>
+                    <div class="controls">
+                        <input class="input-xlarge" value="{{password}}" name="password" id="password" type="password">
+                        <span class="help-inline"></span>
+                    </div>
+                </div>
+                {{/passwordok}}
+                {{^passwordok}}
+                <div class="control-group error">
+                    <label class="control-label" for="password">Password</label>
+                    <div class="controls">
+                        <input class="input-xlarge" value="{{password}}" name="password" id="password" type="password">
+                        <span class="help-inline">
+                            {{#errors.password}}
+                            <span>{{message}}. </span>
+                            {{/errors.password}}
+                        </span>
+                    </div>
+                </div>
+                {{/passwordok}}
+                {{#passwordcok}}
+                <div class="control-group">
+                    <label class="control-label" for="passwordConfirmation">Password confirmation</label>
+                    <div class="controls">
+                        <input class="input-xlarge" value="{{passwordc}}" name="passwordc" id="passwordConfirmation" type="password">
+                        <span class="help-inline"></span>
+                    </div>
+                </div>
+                {{/passwordcok}}
+                {{^passwordcok}}
+                <div class="control-group error">
+                    <label class="control-label" for="passwordConfirmation">Password confirmation</label>
+                    <div class="controls">
+                        <input class="input-xlarge" value="{{passwordc}}" name="passwordc" id="passwordConfirmation" type="password">
+                        <span class="help-inline">
+                            {{#errors.passwordc}}
+                            <span>{{message}}. </span>
+                            {{/errors.passwordc}}
+                        </span>
+                    </div>
+                </div>
+                {{/passwordcok}}
+                {{#emailok}}
+                <div class="control-group">
+                    <label class="control-label" for="email">Email</label>
+                    <div class="controls">
+                        <input class="input-xlarge" value="{{email}}" name="email" id="email" type="text">
+                        <span class="help-inline"></span>
+                    </div>
+                </div>
+                {{/emailok}}
+                {{^emailok}}
+                <div class="control-group error">
+                    <label class="control-label" for="email">Email</label>
+                    <div class="controls">
+                        <input class="input-xlarge" value="{{email}}" name="email" id="email" type="text">
+                        <span class="help-inline">
+                            {{#errors.email}}
+                            <span>{{message}}. </span>
+                            {{/errors.email}}
+                        </span>
+                    </div>
+                </div>
+                {{/emailok}}
+                <div id="registrationExtension">
+                    {{{registrationExtension}}}
+                </div>
+                <div class="form-actions">
+                    <button id="register" type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="span6">
+        <h2>Why?</h2>
+        <p>Coders should meet more often so that they improve their <strong>skills</strong> faster.</p>
+        <h2>What?</h2>
+        <p>Learn and share <strong>programming</strong> concepts and implementations.</p>
+        <h2>How?</h2>
+        <p>There will be series of sessions. In each session we present you a <strong>task</strong> or <strong>concept</strong>, then you implement it your way and share it in this special web app.</p>
+        <p>When you're finished, others can see how you did it. If you're struggling - you can see how others did it.</p>
+        <p>By the way, you can always talk to people. Especially during the <strong>meal</strong> break!</p>
+        <h2>Give me an example task!</h2>
+        <p>Count the number of bits set to 1 in a given integer.</p>
+        <h2>Give me an example concept!</h2>
+        <p><a href="http://en.wikipedia.org/wiki/Binary_search">Binary search</a>.</p>
+    </div>
+</div>

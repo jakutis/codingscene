@@ -1,0 +1,32 @@
+<div class="span12">
+    <h1>Add new task</h1>
+    <form id="taskForm" class="form-horizontal">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label" for="title">Title</label>
+                <div class="controls">
+                    <input class="input-xlarge focused" id="title" type="text" style="width:100%">
+                    <span class="help-inline"></span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="description">Description</label>
+                <div class="controls">
+                    <textarea id="description" rows="20" style="width:100%;font-family:monospace"></textarea>
+                    <span class="help-inline"></span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Description preview</label>
+                <div class="controls">
+                    <div id="descriptionPreview" style="width:100%"></div>
+                    <span class="help-inline"></span>
+                </div>
+            </div>
+            <div class="form-actions">
+                <input type="submit" class="btn btn-primary" value="Add">
+                <span id="badge" class="badge badge-info" style="display:none">Added!</span>
+            </div>
+        </fieldset>
+    </form>
+</div>

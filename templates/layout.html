@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{{title}} - {{tagline}}</title>
+        <meta name="keywords" content="{{keywords}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/style/index.css?{{version}}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <ul class="nav">
+                        <li class="active"><a id="home" href="{{baseurl}}/" class="brand">{{title}}</a></li>
+                        <li><a><i class="icon-user icon-white"></i> <span id="codersonline">{{codersonline}}</span> of <span id="codersregistered">{{codersregistered}}</span> online</a></li>
+                    </ul>
+                    <ul class="nav pull-right">
+                        <li><a href="{{blogurl}}">Blog</a></li>
+                        <li><a href="mailto:{{email}}">Email</a></li>
+                        <li class="divider-vertical"></li>
+                        {{{loginbar}}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {{#body}}
+        <p>Your browsing experience has been degraded to a non-dynamic version. Go back to <a href="{{baseurl}}/script/1/">the dynamic version</a>.</p>
+        <div id="body" class="container-fluid">
+            {{{body}}}
+        </div>
+        {{/body}}
+        {{^body}}
+        <div id="body" class="container-fluid"></div>
+        <noscript>
+            <meta http-equiv="refresh" content="0;URL='{{baseurl}}/script/0{{path}}'">
+        </noscript>
+        <script src="/script/index.js?{{version}}"></script>
+        {{/body}}
+    </body>
+</html>

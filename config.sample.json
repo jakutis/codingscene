@@ -1,0 +1,37 @@
+{
+    "host" : "0.0.0.0",
+    "port" : 8080,
+    "pid" : "/home/tahu/tmp/codingscene.pid",
+    "log" : {
+        "forever" : "/home/tahu/tmp/codingscene.forever.log",
+        "stdout" : "/home/tahu/tmp/codingscene.stdout.log",
+        "stderr" : "/home/tahu/tmp/codingscene.stderr.log"
+    },
+    "salt" : "somanyrands",
+    "db" : {
+        "username" : "root",
+        "password" : "",
+        "hostname" : "localhost",
+        "database" : "codingscene"
+    },
+    "mail" : {
+        "type" : "smtp",
+        "username" : "user",
+        "password" : "pass",
+        "hostname" : "localhost"
+    },
+    "signature" : "CodingScene\ninfo@localhost",
+    "signatureHTML" : "<p>CodingScene</p><p><a href=\"mailto:info@localhost\">info@localhost</a></p>",
+    "client" : {
+        "rootUserId" : 1,
+        "websocket" : "http://localhost:8080/",
+        "title" : "Example",
+        "keywords" : "example,example.org,exampleorg",
+        "tagline" : "a web app for coding events, problems, contacts",
+        "blogurl" : "http://blog.localhost/",
+        "baseurl" : "http://localhost:8080",
+        "email" : "info@localhost",
+        "namedEmail" : "CodingScene <info@localhost>"
+    },
+    "browserifyDebug" : true
+}

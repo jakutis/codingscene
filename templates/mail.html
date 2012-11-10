@@ -1,0 +1,39 @@
+<div class="span12">
+    <h1>Mail all members</h1>
+    <form id="mailForm" class="form-horizontal">
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label" for="subject">Subject</label>
+                <div class="controls">
+                    <input class="input-xlarge focused" id="subject" type="text" style="width:100%">
+                    <span class="help-inline"></span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="emails">Emails (leave empty to broadcast to everyone)</label>
+                <div class="controls">
+                    <input class="input-xlarge focused" id="emails" type="text" style="width:100%">
+                    <span class="help-inline"></span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="text">Text</label>
+                <div class="controls">
+                    <textarea id="text" rows="20" style="width:100%;font-family:monospace"></textarea>
+                    <span class="help-inline"></span>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="text">Text preview</label>
+                <div class="controls">
+                    <div id="textPreview" style="width:100%"></div>
+                    <span class="help-inline"></span>
+                </div>
+            </div>
+            <div class="form-actions">
+                <input type="submit" class="btn btn-primary" value="Send">
+                <span id="badge" class="badge badge-info" style="display:none">Sent!</span>
+            </div>
+        </fieldset>
+    </form>
+</div>

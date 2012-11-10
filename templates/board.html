@@ -1,0 +1,33 @@
+<div class="row-fluid">
+    <div class="span12">
+        <div class="row-fluid tabbable tabs-left">
+            <ul id="usertoggles" class="span3 nav nav-tabs">
+                <select>
+                    {{#events}}
+                    <option value="{{id}}">{{title}} {{date}}</option>
+                    {{/events}}
+                </select>
+                <ul class="nav nav-list">
+                    <li class="nav-header">Views</li>
+                    <li><a id="submissions-link" href="/event/{{eventId}}/submissions/{{taskId}}"><i class="icon-list-alt"></i> Submissions</a></li>
+                    <li class="active"><a href="/event/{{eventId}}/editor/{{username}}/{{taskId}}"><i class="icon-pencil"></i> Editor</a></li>
+                    <li class="nav-header">Members</li>
+                    {{#users}}
+                    {{> boardUserToggle}}
+                    {{/users}}
+                </ul>
+            </ul>
+            <div class="span9 tab-content">
+                <div class="tabbable">
+                    <ul id="tasktoggles" class="nav nav-tabs">
+                        {{#tasks}}
+                        <li><a class="tasktoggle" id="tasktoggle-{{id}}" href="/event/{{eventId}}/editor/{{username}}/{{id}}" data-toggle="tab">{{title}}</a></li>
+                        {{/tasks}}
+                    </ul>
+                    <div id="content" class="tab-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

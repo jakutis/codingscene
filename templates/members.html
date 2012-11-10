@@ -1,0 +1,26 @@
+<div class="row-fluid">
+    <div class="span12">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Member</th>
+                    <th>Contact</th>
+                    <th>Twitter</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#members}}
+                <tr>
+                    <td><a href="/member/{{username}}">{{username}}</a></td>
+                    <td><a href="mailto:{{email}}">{{name}}</a></td>
+                    <td>
+                        {{#hasTwitter}}
+                        <a href="http://twitter.com/{{twitter}}">@{{twitter}}</a>
+                        {{/hasTwitter}}
+                    </td>
+                </tr>
+                {{/members}}
+            </tbody>
+        </table>
+    </div>
+</div>

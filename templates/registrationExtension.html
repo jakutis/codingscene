@@ -1,0 +1,90 @@
+                    {{#nameok}}
+                    <div class="control-group {{class}}">
+                        <label class="control-label" for="name">Full name</label>
+                        <div class="controls">
+                            <input class="input-xlarge focused" value="{{name}}" name="name" id="name" type="text">
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+                    {{/nameok}}
+                    {{^nameok}}
+                    <div class="control-group error">
+                        <label class="control-label" for="name">Full name</label>
+                        <div class="controls">
+                            <input class="input-xlarge focused" value="{{name}}" name="name" id="name" type="text">
+                            <span class="help-inline">
+                                {{#errors.name}}
+                                <span>{{message}}. </span>
+                                {{/errors.name}}
+                            </span>
+                        </div>
+                    </div>
+                    {{/nameok}}
+                    {{#twitterok}}
+                    <div class="control-group {{class}}">
+                        <label class="control-label" for="twitter">Twitter</label>
+                        <div class="controls">
+                            <input class="input-xlarge focused" value="{{twitter}}" name="twitter" id="twitter" type="text">
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+                    {{/twitterok}}
+                    {{^twitterok}}
+                    <div class="control-group error">
+                        <label class="control-label" for="twitter">Twitter</label>
+                        <div class="controls">
+                            <input class="input-xlarge focused" value="{{twitter}}" name="twitter" id="twitter" type="text">
+                            <span class="help-inline">
+                                {{#errors.twitter}}
+                                <span>{{message}}. </span>
+                                {{/errors.twitter}}
+                            </span>
+                        </div>
+                    </div>
+                    {{/twitterok}}
+                    {{#aboutok}}
+                    <div class="control-group {{class}}">
+                        <label class="control-label" for="about">About you,<br>e.g. development industry, programming languages, etc.</label>
+                        <div class="controls">
+                            <textarea class="input-xlarge" name="about" id="about" rows="4">{{about}}</textarea>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+                    {{/aboutok}}
+                    {{^aboutok}}
+                    <div class="control-group error">
+                        <label class="control-label" for="about">About you,<br>e.g. development industry, programming languages, etc.</label>
+                        <div class="controls">
+                            <textarea class="input-xlarge" name="about" id="about" rows="4">{{about}}</textarea>
+                            <span class="help-inline">
+                                {{#errors.about}}
+                                <span>{{message}}. </span>
+                                {{/errors.about}}
+                            </span>
+                        </div>
+                    </div>
+                    {{/aboutok}}
+                    <p class="{{class}}">You have to bring your <strong>laptop</strong>, if you have one.</p>
+                    {{#requestsok}}
+                    <div class="control-group {{class}}">
+                        <label class="control-label" for="requests">Requests,<br>in case you have no laptop, specific food, etc.</label>
+                        <div class="controls">
+                            <textarea class="input-xlarge" name="requests" id="requests" rows="4">{{requests}}</textarea>
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+                    {{/requestsok}}
+                    {{^requestsok}}
+                    <div class="control-group error">
+                        <label class="control-label" for="requests">Requests,<br>in case you have no laptop, specific food, etc.</label>
+                        <div class="controls">
+                            <textarea class="input-xlarge" name="requests" id="requests" rows="4">{{requests}}</textarea>
+                            <span class="help-inline">
+                                {{#errors.requests}}
+                                <span>{{message}}. </span>
+                                {{/errors.requests}}
+                            </span>
+                        </div>
+                    </div>
+                    {{/requestsok}}
+

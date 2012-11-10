@@ -1,0 +1,39 @@
+<div class="row-fluid">
+    <div class="span12">
+        <h1>Login</h1>
+        <form id="loginForm" class="form-horizontal">
+            <fieldset>
+                <div class="control-group">
+                    <label class="control-label" for="username">Username or email</label>
+                    <div class="controls">
+                        <input class="input-xlarge focused" id="username" type="text">
+                        <span class="help-inline"></span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="password">Password</label>
+                    <div class="controls">
+                        <input class="input-xlarge" id="password" type="password">
+                        <span class="help-inline">
+                            <input id="forgot" type="button" class="btn" value="Forgot it">
+                        </span>
+                        <span class="help-inline">
+                        </span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <label class="checkbox">
+                            <input id="rememberme" type="checkbox" checked="checked">
+                            Remember me
+                        </label>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <input type="submit" class="btn btn-primary" value="Login">
+                </div>
+            </fieldset>
+        </form>
+        <div class="hidden alert alert-error" id="loginResult"></div>
+    </div>
+</div>
