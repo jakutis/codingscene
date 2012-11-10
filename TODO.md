@@ -48,3 +48,9 @@
     * save editor height into database, instead of cookie
   * Gal padaryti profilius internete kiekvienam dalyviui kur galėtų dalyviai užsipildyti kokiomis pvz., programavimo kalbomis jie programuoja ir kaip gerai jas žino (ne atviru tekstu, bet tiesiog kalba, ir išreiškimas numeriu kaip gerai moki arba kiek metų programuoji). Galbūt kokia sritis programavimo domina? Bet gal tai per daug sudėtinga trumpai išsireikšti.
   * make it a full-blown real-time system for ACM-ICPC style contests
+  * Pastebėjau klaidą codingsummit.com <http://codingsummit.com/> -- vienu mygtuko paspaudimu padarydavau porą submission'ų iš redaktoriaus.  Galimos priežastys:
+     * Nepatestavote su Mozilla Firefox.
+     * Naudoju NoScript Firefox extension'ą, kuris kartais gali užblokuoti kokią išorinę JS biblioteką ar pan.
+     * Prie mygtuko esate pririšę DOM event handlerį, kuris iškviečiamas kelis kartus per tas milisekundes kol mygtukas yra paspaustas.
+ * Mano supratimu Submissionams praverstų integracija su gist.github.com <https://gist.github.com/>. Ką apie tai manote?
+ * Nežinau kiek dalyvių tai naudotų, bet man patiktų koks API's, kurį curl pagalba galėčiau naudoti tiesiai iš redaktoriaus ar pan..
