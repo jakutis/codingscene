@@ -1,5 +1,3 @@
-# a TODO list (unedited version)
-
   * add another email validation step: try to resolve the domain name
   * Po renginio (tarkim išsiųsti nuorodas) kur dalyviai galėtų išreikšti pasiūlymus/pageidavimus kokia tema norėtų išgirsti kažką ir bendrai paspręsti.
   * registration email match - suggest login
