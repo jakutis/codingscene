@@ -34,7 +34,7 @@
   * board: add submitted count beside username
   * event reminder a day before
   * all elements that are modifiable on site must be realtime
-  * MAYBE log all navigation to websocket and save in db
+  * log all navigation to websocket and save in db
   * siohandler and apphandler message validation to prevent intentional server crashing
   * task video - bored mygtukas, real time feedback in sync with stream
   * spacer and resizer height in js and css bind with LESS / SASS
@@ -47,3 +47,4 @@
   * create tables: `preferences` (`id`, `key`, `defaultValue`), `preferencevalues` (`preference`, `user`, `value`)
     * save editor height into database, instead of cookie
   * Gal padaryti profilius internete kiekvienam dalyviui kur galėtų dalyviai užsipildyti kokiomis pvz., programavimo kalbomis jie programuoja ir kaip gerai jas žino (ne atviru tekstu, bet tiesiog kalba, ir išreiškimas numeriu kaip gerai moki arba kiek metų programuoji). Galbūt kokia sritis programavimo domina? Bet gal tai per daug sudėtinga trumpai išsireikšti.
+  * make it a full-blown real-time system for ACM-ICPC style contests
