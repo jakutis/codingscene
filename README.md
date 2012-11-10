@@ -2,7 +2,7 @@
 
 Web application for coding events, problems, contacts.
 
-# Running
+# Compiling and running
 
     make
 
