@@ -32,6 +32,5 @@
         "baseurl" : "http://localhost:8080",
         "email" : "info@localhost",
         "namedEmail" : "CodingScene <info@localhost>"
-    },
-    "browserifyDebug" : true
+    }
 }
