@@ -10,7 +10,7 @@ build: node_modules public_html/json/templates public_html/style diff_match_patc
 node_modules:
 	npm up
 
-public_html/style:
+public_html/style: bootstrap
 	mkdir -p public_html/style
 	node scripts/styles.js
 
