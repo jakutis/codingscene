@@ -1,7 +1,9 @@
 run: build
-	@echo Check config.sample.json for correct values and run:
-	@echo ./bin/codingscene -c config.sample.json &
-	@echo To create a database, use structure.sql
+	@echo Now check `pwd`/config.sample.json for correct values and run:
+	@echo '    codingscene -c '`pwd`'/config.sample.json'
+	@echo
+	@echo To create a database structure:
+	@echo '    mysql -u root -p -h localhost codingscene < '`pwd`'/structure.sql'
 
 build: node_modules public_html/json/templates public_html/style diff_match_patch_20120106 bootstrap ace
 

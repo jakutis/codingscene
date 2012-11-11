@@ -11,6 +11,9 @@
     "bin" : {
         "codingscene" : "./bin/codingscene"
     },
+    "scripts" : {
+        "postinstall" : "make"
+    },
     "dependencies": {
         "forever-monitor" : "1.1.x",
         "async" : "0.1.x",
