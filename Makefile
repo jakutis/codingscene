@@ -19,11 +19,9 @@ public_html/json/templates:
 	node scripts/templates.js
 
 bootstrap:
-	@echo install recess with "npm install -g recess"
-	@which recess
 	mkdir -p public_html/img
 	git clone https://github.com/twitter/bootstrap
-	cd bootstrap;make
+	cd bootstrap;PATH="../node_modules/.bin:$(PATH)" make
 	cp bootstrap/docs/assets/img/glyphicons-halflings-white.png bootstrap/docs/assets/img/glyphicons-halflings.png public_html/img
 	cp bootstrap/docs/assets/css/bootstrap.css styles/00-bootstrap.css
 
