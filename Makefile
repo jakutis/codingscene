@@ -10,7 +10,7 @@ run: build
 build: node_modules public_html/json/templates public_html/style diff_match_patch_20120106
 
 node_modules:
-	npm up
+	npm install
 
 public_html/style: node_modules
 	mkdir -p public_html/style
