@@ -37,5 +37,8 @@ diff_match_patch_20120106:
 	rm diff_match_patch_20120106.zip
 
 clean:
-	rm -rf bootstrap ace lib/diff_match_patch_20120106 node_modules public_html/style public_html/json/templates
+	rm -rf bootstrap node_modules public_html/style public_html/json/templates
+	rm -rf public_html/img
+	rm -rf public_html/style styles/00-bootstrap.css
 	rm -rf styles/00-bootstrap.css public_html/img
+	rm -rf diff_match_patch_20120106 lib/diff_match_patch_20120106
