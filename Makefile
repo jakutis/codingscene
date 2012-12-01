@@ -1,4 +1,6 @@
 run: build
+	@echo ------------------- DONE ----------------------------------------------
+	@echo
 	@echo Now check `pwd`/config.sample.json for correct values and run:
 	@echo '    codingscene -c '`pwd`'/config.sample.json'
 	@echo
