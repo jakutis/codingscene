@@ -7,7 +7,10 @@ run: build
 	@echo To create a database structure:
 	@echo '    mysql -u root -p -h localhost codingscene < '`pwd`'/structure.sql'
 
-build: node_modules public_html/json/templates public_html/style diff_match_patch_20120106 bootstrap ace
+build: node_modules node_modules/ace public_html/json/templates public_html/style diff_match_patch_20120106 bootstrap
+
+node_modules/ace:
+	npm install git://github.com/ajaxorg/ace.git
 
 node_modules:
 	npm up
@@ -26,10 +29,6 @@ bootstrap:
 	cd bootstrap;PATH="../node_modules/.bin:$(PATH)" make
 	cp bootstrap/docs/assets/img/glyphicons-halflings-white.png bootstrap/docs/assets/img/glyphicons-halflings.png public_html/img
 	cp bootstrap/docs/assets/css/bootstrap.css styles/00-bootstrap.css
-
-ace:
-	git clone https://github.com/ajaxorg/ace
-	cd ace;npm install;make build
 
 diff_match_patch_20120106:
 	wget http://google-diff-match-patch.googlecode.com/files/diff_match_patch_20120106.zip
