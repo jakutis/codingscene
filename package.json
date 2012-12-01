@@ -15,6 +15,8 @@
         "postinstall" : "make"
     },
     "dependencies": {
+        "ace" : "git://github.com/ajaxorg/ace.git",
+        "bootstrap" : "git://github.com/twitter/bootstrap.git",
         "recess" : "1.1.x",
         "forever-monitor" : "1.1.x",
         "async" : "0.1.x",

@@ -7,10 +7,14 @@ var dir = __dirname + '/../styles';
 var compile = function(type, filename) {
     var styles = fs.readdirSync(dir);
     styles.sort();
-    var index = v.map(styles, function(style) {
-        return fs.readFileSync(dir + '/' + style);
-    }).join('');
-    fs.writeFileSync(__dirname + '/../public_html/style/index.css', index);
+    styles = v.map(styles, function(style) {
+        return dir + '/' + style;
+    });
+    styles.unshift(__dirname + '/../node_modules/bootstrap/docs/assets/css/bootstrap.css');
+
+    fs.writeFileSync(__dirname + '/../public_html/style/index.css', v.map(styles, function(style) {
+        return fs.readFileSync(style);
+    }).join(''));
 };
 
 compile();
