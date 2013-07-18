@@ -6,6 +6,10 @@ Web application for coding events, problems, contacts.
 
     make
 
+![npm stats](https://nodei.co/npm/codingscene.png)
+
+![npm download stats](https://nodei.co/npm-dl/codingscene.png?months=9)
+
 # Using and developing
 
 Open the webapp in browser, register your demo user.
