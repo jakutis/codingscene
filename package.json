@@ -9,9 +9,7 @@
         "type": "git",
         "url": "https://jakut.is/git/CODINGSCENE"
     },
-    "bin" : {
-        "codingscene" : "./bin/codingscene"
-    },
+    "bin" : "cli.js",
     "scripts" : {
         "postinstall" : "make"
     },
