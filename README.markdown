@@ -1,6 +1,6 @@
 # codingscene
 
-Web application for coding events, problems, contacts.
+Web app for coding events, problems, contacts.
 
 - [Overview](#overview)
 - [Installation](#installation)
