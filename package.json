@@ -2,6 +2,7 @@
     "author": "Vytautas Jakutis <vytautas@jakut.is> (http://jakut.is/)",
     "name": "codingscene",
     "description": "Web app for coding events, problems, contacts.",
+    "license": "GPL-3.0",
     "version": "1.0.6",
     "homepage": "https://jakut.is/git/CODINGSCENE/about/",
     "repository": {
