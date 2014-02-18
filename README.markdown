@@ -1,18 +1,24 @@
-# CodingScene
+# codingscene
 
 Web application for coding events, problems, contacts.
 
-# Compiling and running
+- [Overview](#overview)
+- [Installation](#installation)
+- [CLI](#cli)
+- [Development](#development)
 
-    make
+## Overview
 
-![npm stats](https://nodei.co/npm/codingscene.png)
+    TODO
 
-![npm download stats](https://nodei.co/npm-dl/codingscene.png?months=9)
+## Installation
 
-# Using and developing
+  Install with [npm](https://www.npmjs.org/package/codingscene):
 
-Open the webapp in browser, register your demo user.
+    $ npm install --global codingscene
+
+In the shell, run `make`.
+Then open the webapp in browser, register your demo user.
 To confirm the registered user you'll have to either copy confirmation hash from sql codingscene.users.confirmation field, or have a correct smtp configuration.
 Then you login and see that there are no events.
 Not only that, but there is also no administrator's panel.
@@ -22,10 +28,10 @@ Plus, no unit tests and no acceptance tests.
 Better someone else adds the new features.
 Or whatever.
 
-# License
+## CLI
 
-This software is released under the [GNU General Public License v3](http://www.gnu.org/copyleft/gpl.html).
+    TODO
 
-# Contributors
+## Development
 
-  * [Vytautas Jakutis](https://jakut.is)
+    TODO
