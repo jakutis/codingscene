@@ -1,7 +1,7 @@
 {
     "author": "Vytautas Jakutis <vytautas@jakut.is> (http://jakut.is/)",
     "name": "codingscene",
-    "description": "Web app for coding events, problems, contacts",
+    "description": "Web app for coding events, problems, contacts.",
     "version": "1.0.6",
     "homepage": "https://jakut.is/git/CODINGSCENE/about/",
     "repository": {
